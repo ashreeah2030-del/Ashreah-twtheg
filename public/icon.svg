@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="50%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#1d4ed8"/>
+    </linearGradient>
+    <linearGradient id="lensGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#ea580c"/>
+    </linearGradient>
+    <linearGradient id="capGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#e2e8f0"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Background rounded rect -->
+  <rect width="512" height="512" rx="115" fill="url(#bgGrad)"/>
+  
+  <!-- Camera Body Outline -->
+  <g filter="url(#shadow)">
+    <!-- Camera base -->
+    <rect x="96" y="150" width="320" height="230" rx="36" fill="#ffffff" fill-opacity="0.95"/>
+    
+    <!-- Camera top bump -->
+    <path d="M 180 150 L 205 115 C 210 110, 218 106, 226 106 L 286 106 C 294 106, 302 110, 307 115 L 332 150 Z" fill="#ffffff" fill-opacity="0.95"/>
+    
+    <!-- Flash/Sensor dot -->
+    <circle cx="360" cy="195" r="14" fill="#ef4444"/>
+    <circle cx="152" cy="195" r="10" fill="#94a3b8"/>
+
+    <!-- Lens Outer Rim -->
+    <circle cx="256" cy="270" r="82" fill="#0f172a"/>
+    <circle cx="256" cy="270" r="72" fill="#1e293b"/>
+    <circle cx="256" cy="270" r="54" fill="url(#lensGrad)"/>
+    <!-- Lens reflection -->
+    <circle cx="256" cy="270" r="32" fill="#0f172a"/>
+    <circle cx="242" cy="256" r="10" fill="#ffffff" fill-opacity="0.8"/>
+  </g>
+
+  <!-- Student Graduation Cap / Activity Ribbon Accent -->
+  <g filter="url(#shadow)">
+    <!-- Cap top diamond -->
+    <polygon points="256,58 350,98 256,138 162,98" fill="#fbbf24"/>
+    <!-- Cap skull base -->
+    <path d="M 204 116 L 204 136 C 204 154 308 154 308 136 L 308 116 Z" fill="#d97706"/>
+    <!-- Tassel -->
+    <line x1="335" y1="102" x2="360" y2="135" stroke="#f59e0b" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="360" cy="138" r="6" fill="#f59e0b"/>
+  </g>
+
+  <!-- Video Play / Photo Accent Badge at bottom right -->
+  <g transform="translate(320, 310)" filter="url(#shadow)">
+    <circle cx="45" cy="45" r="38" fill="#10b981"/>
+    <polygon points="38,30 62,45 38,60" fill="#ffffff"/>
+  </g>
+</svg>
